@@ -1,6 +1,6 @@
 import { Badge, Button, Card, Group, Image, Indicator, Text, useMatches } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import FullProjectCard from "./FullProjectCard.tsx";
+import FullProjectCard from "./FullProjectCard";
 
 const ProjectCard = (props:any) => {
   const [opened, { open, close }] = useDisclosure(false);

@@ -4,6 +4,7 @@
   "homepage": "https://Vivek-Jha-05.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@mantine/core": "^7.15.2",
     "@mantine/form": "^7.15.2",

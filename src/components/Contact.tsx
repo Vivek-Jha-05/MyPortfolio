@@ -1,10 +1,10 @@
 import { useState } from "react";
-import FloatingInput from "./FloatingInput.tsx";
+import FloatingInput from "./FloatingInput";
 import { Button, useMatches } from "@mantine/core";
 import { IconArrowRight, IconTopologyStar3 } from "@tabler/icons-react";
-import { validateForm } from "./Validations.tsx";
+import { validateForm } from "./Validations";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase.tsx";
+import { db } from "../firebase";
 import toast from "react-hot-toast";
 
 const Contact = (props:any) => {
@@ -35,8 +35,32 @@ const Contact = (props:any) => {
         setFormError(newFormError);
         if(valid) {
             setFormData(form);
-            await addDoc(collection(db, "portfolio"), formData);
             toast.success("Message sent successfully!", {duration: 3000});
+            await addDoc(collection(db, "portfolio"), formData);
+            
+            // Using FormSubmit.co (Zero Setup)
+            // Note: Custom auto-responses are a Premium feature. 
+            // We are using the default behavior which sends a copy of the submission.
+            fetch("https://formsubmit.co/ajax/vivekjha0905@gmail.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: formData.message,
+                    _template: "table",
+                    _subject: `New Contact from ${formData.name}`,
+                    _captcha: "false"
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+
         }else {
             toast.error("Please fill all the fields correctly.", {duration: 3000});
         }

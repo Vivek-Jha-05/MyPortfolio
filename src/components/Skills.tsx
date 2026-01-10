@@ -1,5 +1,5 @@
-import { SkillInfo } from "../User.tsx";
-import SkillCard from "./SkillCard.tsx";
+import { SkillInfo } from "../User";
+import SkillCard from "./SkillCard";
 
 const Skills = () => {
     return (

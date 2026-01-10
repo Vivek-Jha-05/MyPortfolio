@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin } from "@tabler/icons-react";
-import { Info} from "../User.tsx";
+import { Info} from "../User";
 
 const Footer =() => {
 const socialLinks = [

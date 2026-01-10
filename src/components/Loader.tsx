@@ -1,6 +1,6 @@
 import { IconHexagon, IconHexagonLetterV } from "@tabler/icons-react";
-import { Slugs } from "../User.tsx";
-import { IconCloud } from "./magicui/icon-cloud.tsx";
+import { Slugs } from "../User";
+import { IconCloud } from "./magicui/icon-cloud";
 
 
 export function Loader() {

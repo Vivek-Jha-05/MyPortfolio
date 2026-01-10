@@ -2,7 +2,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { Drawer, Burger } from '@mantine/core';
 import React from 'react';
 // import { IconHexagonLetterV } from '@tabler/icons-react';
-import Header, { navLinks } from './Header.tsx';
+import Header, { navLinks } from './Header';
 
 const SideBar = ({ opened, toggle }: { opened: boolean; toggle: () => void }) => {
   // const [opened, { toggle }] = useDisclosure(false);

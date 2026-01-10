@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import HomePage from './components/HomePage.tsx';
+import HomePage from './components/HomePage';
 import { createTheme, MantineProvider } from '@mantine/core';
 import  "@mantine/core/styles.css";
 import AOS from 'aos';
@@ -8,12 +8,12 @@ import 'aos/dist/aos.css';
 
 import { pdfjs } from 'react-pdf';
 
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   'pdfjs-dist/build/pdf.worker.min.mjs',
-//   import.meta.url,
-// ).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.jsdelivr.net/npm/pdf.js-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.jsdelivr.net/npm/pdf.js-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 function App() {
   useEffect(() => {

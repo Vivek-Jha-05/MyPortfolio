@@ -1,5 +1,5 @@
 import { IconHexagonLetterV } from '@tabler/icons-react';
-import SideBar from "./SideBar.tsx";
+import SideBar from "./SideBar";
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { Burger, em } from '@mantine/core';
 import { useEffect, useState } from 'react';

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header.tsx"
-import Mail from "./Mail.tsx";
-import Social from "./Social.tsx";
-import About from "./About.tsx";
-import Projects from "./Projects.tsx";
-import Skills from './Skills.tsx';
-import Experience from "./Experience.tsx";
-import Contact from "./Contact.tsx";
-import Footer from "./Footer.tsx";
-import { Loader } from "./Loader.tsx";
+import Header from "./Header"
+import Mail from "./Mail";
+import Social from "./Social";
+import About from "./About";
+import Projects from "./Projects";
+import Skills from './Skills';
+import Experience from "./Experience";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import { Loader } from "./Loader";
 import { Toaster } from 'react-hot-toast';
 
 const HomePage = ()=> {

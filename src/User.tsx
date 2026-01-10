@@ -1,3 +1,8 @@
+import project1 from "./assets/project1.png";
+import project2 from "./assets/project2.png";
+import project3 from "./assets/project3.png";
+
+
 const Info =  {
     name: "Vivek Jha",
     stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Freelancer"],
@@ -8,7 +13,7 @@ const ProjectInfo = [
     {
         title: "Portfolio",
         description: "This is my portfolio website. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices.",
-        image: "project1.png",
+        image: project1,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -19,7 +24,7 @@ const ProjectInfo = [
     {
         title: "Personal Website",
         description: "This is my personal website. It is built using HTML, CSS, JavaScript and Bootstrap. It is a responsive website and works on all devices.",
-        image: "project2.png",
+        image: project2,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -30,7 +35,7 @@ const ProjectInfo = [
     {
         title: "Quiz App",
         description: "This is a quiz app. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices.",
-        image: "project3.png",
+        image: project3,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -41,7 +46,7 @@ const ProjectInfo = [
     {
         title: "Portfolio",
         description: "This is my portfolio website. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        image: "project1.png",
+        image: project1,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -52,7 +57,7 @@ const ProjectInfo = [
     {
         title: "Personal Website",
         description: "This is my personal website. It is built using HTML, CSS, JavaScript and Bootstrap. It is a responsive website and works on all devices.",
-        image: "project2.png",
+        image: project2,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -63,7 +68,7 @@ const ProjectInfo = [
     {
         title: "Quiz App",
         description: "This is a quiz app. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices.",
-        image: "project3.png",
+        image: project3,
         live: true,
         github: "www.github.com/Vivek-Jha-05",
         link: "www.github.com/Vivek-Jha-05",
@@ -120,43 +125,6 @@ const ExperienceInfo = [
     }
 ]
 
-// const Slugs = [
-//     "typescript",
-//     "javascript",
-//     "react",
-//     "nodejs",
-//     "html",
-//     "css",
-//     "python",
-//     "java",
-//     "c++",
-//     "c",
-//     "mongodb",
-//     "mysql",
-//     "postgresql",
-//     "firebase",
-//     "graphql",
-//     "docker",
-//     "kubernetes",
-//     "aws",
-//     "azure",
-//     "google-cloud",
-//     "git",
-//     "github",
-//     "leetcode",
-//     "hackerrank",
-//     "codechef",
-//     "android",
-//     "flutter",
-//     "vanta-js",
-//     "tailwind-css",
-//     "bootstrap",
-//     "material-ui",
-//     "express-js",
-//     "vercel",
-//     "netlify",
-
-// ]
 
 const Slugs = [
     "mongodb",

@@ -1,6 +1,7 @@
 import { Timeline, useMatches } from "@mantine/core";
 import { IconBriefcaseFilled } from "@tabler/icons-react";
-import { ExperienceInfo } from "../User.tsx";
+import { ExperienceInfo } from "../User";
+import companyIcons from "../assets/icons/index.js";
 
 const TimeLineItem = (items: any) => {
     const size = useMatches({
@@ -11,7 +12,7 @@ const TimeLineItem = (items: any) => {
     return items.map((item: any, index: number) => <Timeline.Item data-aos="fade-up" data-aos-duration="800" key={index} className="!pt-12 !mb-2 sm-mx:!p-1 " bullet={<IconBriefcaseFilled className="!text-bgColor" size={20}/>}>
         <div className="border border-primaryColor shadow-[0_0_10px_0_#64FFDA50] p-4 rounded-2xl flex flex-col gap-2 hover:-translate-y-2 transition transform duration-300 ease-in-out sm-mx:p-2">
             <div className="flex gap-2 items-center">
-                <img className="rounded-lg w-16 md-mx:w-14" src={`icons/${item.company}.png`} alt="company" />
+                <img className="rounded-lg w-16 md-mx:w-14" src={companyIcons[item.company.toLowerCase() as keyof typeof companyIcons]} alt="company" />
                 <div className="flex flex-col">
                     <div className="text-white text-2xl font-semibold md-mx:text-xl xs-mx:text-lg xms-mx:text-sm">{item.role}</div>
                     <div className="text-lg font-semibold text-textColor md-mx:text-base sm-mx:text-sm xs-mx:text-xs">{item.company} &#x2022; {item.date}</div>
