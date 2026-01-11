@@ -37,12 +37,12 @@ const Header=()=> {
     }, [lastScrollY]);
     
     return (
-        <nav className={`flex ${show?"translate-y-0":"-translate-y-28"} ${shadow?"shadow-[0px_10px_30px_-10px_#020c1b]":""} transition-transform duration-500 ease-in-out z-10 top-0 fixed w-full justify-between bg-bgColor h-[17vh] md-mx:h-[10vh] px-10 dm-mono-regular items-center`}>
+        <nav className={`flex ${show?"translate-y-0":"-translate-y-28"} ${shadow?"shadow-[0px_10px_30px_-10px_#020c1b]":""} transition-transform duration-500 ease-in-out z-[100000] top-0 fixed w-full justify-between bg-bgColor h-[17vh] md-mx:h-[10vh] px-10 dm-mono-regular items-center`}>
             <IconHexagonLetterV className="" size={isMobile?45:60} color="#64FFDA" stroke={1.25}/>
             <div className="md:flex gap-8 hidden">
                 {navLinks(false, null)}
             </div>
-            <Burger className='md:!hidden -z-10' color='#64FFDA' size="lg" opened={opened} onClick={toggle} />
+            <Burger className='md:!hidden z-50' color='#64FFDA' size="lg" opened={opened} onClick={toggle} />
             <SideBar opened={opened} toggle={toggle} />
             {/* <SideBar/> */}
         </nav>
