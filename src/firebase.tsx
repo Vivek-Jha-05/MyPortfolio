@@ -15,9 +15,13 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics =
+  typeof window !== "undefined" && window.indexedDB
+    ? getAnalytics(app)
+    : null;
 
 // ✅ EXPORT analytics (fixes ESLint error)
-export const analytics = getAnalytics(app);
+export { analytics };
 
 // Firestore
 export const db = getFirestore(app);
