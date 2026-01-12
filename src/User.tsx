@@ -5,18 +5,18 @@ import project3 from "./assets/project3.png";
 
 const Info =  {
     name: "Vivek Jha",
-    stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Freelancer"],
-    bio: "I'm a Software Engineer, Full Stack Developer, Competitive Programmer and Freelancer. I'm a tech enthusiast and love to explore new technologies. I'm a quick learner and always ready to learn new things. I'm a team player and always ready to help others. I'm a problem solver and always ready to solve problems. I'm a hard worker and always ready to work hard.",
+    stack: ["Software Developer", "Full Stack Developer", "Competitive Programmer", "Freelancer"],
+    bio: "I'm a Software Developer, Full Stack Developer, Competitive Programmer and Freelancer. I'm a tech enthusiast and love to explore new technologies. I'm a quick learner and always ready to learn new things. I'm a team player and always ready to help others. I'm a problem solver and always ready to solve problems. I'm a hard worker and always ready to work hard.",
 }
-
+    
 const ProjectInfo = [
     {
         title: "Portfolio",
         description: "This is my portfolio website. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices.",
         image: project1,
         live: true,
-        github: "www.github.com/Vivek-Jha-05",
-        link: "www.github.com/Vivek-Jha-05",
+        github: "https://github.com/Vivek-Jha-05/MyPortfolio",
+        link: "https://vivek-jha.vercel.app/",
         techStack: ["React", "TypeScript", "Tailwind CSS", "Vanta.js"],
         type: "Web",
         status: "Completed",

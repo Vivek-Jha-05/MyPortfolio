@@ -1,7 +1,7 @@
 import React from "react";
 
 const Mail = ()=> {
-    return <div className="!flex !items-center text-textColor gap-10 fixed bottom-40 -right-40 rotate-90" >
+    return <div className="!flex !items-center text-textColor gap-10 fixed bottom-40 -right-48 rotate-90" >
         <div data-aos-duration="800" data-aos="fade-down-left" className="flex">
         <a href="mailto:vivekjha0905@gmail.com" className="vt323-regular md-mx:hidden text-lg tracking-widest hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out">
             vivekjha0905@gmail.com
