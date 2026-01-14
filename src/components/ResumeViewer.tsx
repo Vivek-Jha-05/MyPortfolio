@@ -1,12 +1,13 @@
-import { ActionIcon, Modal, ScrollArea, Tooltip } from '@mantine/core';
+import { ActionIcon, Modal, ScrollArea, Tooltip, Text } from '@mantine/core';
 import { IconArrowBigDownLineFilled } from '@tabler/icons-react';
-import { Document, Page } from 'react-pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
 import { Info } from '../User';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 import resume from '../assets/Vivek-Jha-Resume.pdf';
 
 
 const ResumeViewer = (props: any) => {
-    return <Modal.Root scrollAreaComponent={ScrollArea.Autosize} size="auto" opened={props.opened} onClose={props.close} className='!font-mono'>
+    return <Modal.Root scrollAreaComponent={ScrollArea.Autosize} size="auto" opened={props.opened} onClose={props.close} className='!font-mono' zIndex={9999}>
         <Modal.Overlay />
         <Modal.Content className='!rounded-3xl'>
             <Modal.Header className='!bg-bgColor !text-primaryColor !border-primaryColor !border-2 !rounded-t-3xl !border-b-0'>
@@ -20,12 +21,18 @@ const ResumeViewer = (props: any) => {
                 <Modal.CloseButton size="md" iconSize="30px" className='!bg-bgColor !text-red-500' />
             </Modal.Header>
             <Modal.Body className='!bg-bgColor !flex !justify-between !gap-4  !text-primaryColor !border-primaryColor !border-2 !rounded-b-3xl !border-t-0 !pt-3'>
-                <Document file={resume} >
+                <Document
+                    file={resume}
+                    loading={<Text>Loading resume...</Text>}
+                    error={<Text color="red">Failed to load PDF. Please try again later.</Text>}
+                >
                     <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
                 </Document>
             </Modal.Body>
         </Modal.Content>
     </Modal.Root>
 }
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 export default ResumeViewer;
