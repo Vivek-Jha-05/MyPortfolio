@@ -2,7 +2,7 @@ import { ActionIcon, Modal, ScrollArea, Tooltip } from '@mantine/core';
 import { IconArrowBigDownLineFilled } from '@tabler/icons-react';
 import { Document, Page } from 'react-pdf';
 import { Info } from '../User';
-import resume from '../assets/Vivek_Resume.pdf';
+import resume from '../assets/Vivek-Jha-Resume.pdf';
 
 
 const ResumeViewer = (props: any) => {

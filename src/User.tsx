@@ -33,7 +33,7 @@ const ProjectInfo = [
         status: "Completed",
     },
     {
-        title: "Quiz App",
+        title: "Monolithic Quiz App",
         description: "This is a quiz app. It is built using React, TypeScript, Tailwind CSS and Vanta.js. It is a responsive website and works on all devices.",
         image: project3,
         live: true,
@@ -103,14 +103,14 @@ const SkillInfo = [
 
 const ExperienceInfo = [
     {
-        role: "Software Engineer",
-        company: "Google",
-        date: "Jan 2022 - Present",
-        description: "Working as a Software Engineer at Tech Company. Responsible for developing and maintaining web applications using React, Node.js and MongoDB.",
-        skills: ["React", "Node.js", "MongoDB", "Express.js"],
+        role: "Gen AI Intern",
+        company: "IBM PBEL",
+        date: "Aug 2025 - Oct 2025",
+        description: "Working as a Gen AI Intern at IBM PBEL. Responsible for developing and maintaining web applications using React, Node.js and MongoDB.",
+        skills: ["Python", "OpenAI", "TensorFlow", "PyTorch", "NLP", "Machine Learning"],
     },
     {
-        role: "Intern",
+        role: "Team Lead",
         company: "Google",
         date: "Jun 2021 - Dec 2021",
         description: "Worked as an intern at Internship Company. Developed a web application using React and Node.js. Gained experience in web development and learned about software development lifecycle.",

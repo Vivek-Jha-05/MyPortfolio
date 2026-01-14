@@ -12,7 +12,7 @@ import { IconArrowRight, IconDownload } from "@tabler/icons-react";
 import { Particles } from "./magicui/particles";
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
 import profile from "../assets/profile.png";
-import resume from "../assets/Vivek_Resume.pdf";
+import resume from "../assets/Vivek-Jha-Resume.pdf";
 
 const About = () => {
   const [opened, { open, close }] = useDisclosure(false);
